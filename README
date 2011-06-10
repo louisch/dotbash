@@ -4,5 +4,5 @@ git clone git://github.com/louisch/dotbash.git
 You will need to create symlinks to the bash configuration files:
 cp ~/.bashrc ~/.bashrc_original
 ln -s <path/to/cloned/repo>/bashrc ~/.bashrc
-cp ~/.bash_profile ~/.bash_profile_original
-ln -s <path/to/cloned/repo>/bash_profile ~/.bash_profile
+cp ~/.profile ~/.profile_original
+ln -s <path/to/cloned/repo>/profile ~/.profile
