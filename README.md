@@ -1,5 +1,5 @@
 # Install
-Install by using git clone:
+Install by using `git clone`:
 
     git clone git://github.com/louisch/dotbash.git
 
