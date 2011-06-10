@@ -24,3 +24,6 @@ alias q='exit'
 
 # Tree
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+alias ping='ping -c 5'
+# Ping five times instead of endlessly.
