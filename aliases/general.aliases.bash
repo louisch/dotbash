@@ -10,6 +10,8 @@ alias la='ls -AF'
 alias ll='ls -Alh'
 # Show everything, and list them in a list format.
 
+# File operations
+alias cp='cp -v'
 alias mkdir='mkdir -p'
 # Make parent directories automatically
 
