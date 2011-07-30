@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-alias pacupg='sudo packer -Syu'
+alias pacupg='sudo packer -Syu --noedit'
 # Full upgrade to all packages.
 alias pacin='sudo packer -S --noedit'
 alias pacinedit='sudo packer -S'

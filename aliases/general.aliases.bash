@@ -12,6 +12,9 @@ alias ll='ls -Alh'
 
 # File operations
 alias cp='cp -v'
+alias mv='mv -v'
+alias rm='rm -v'
+# Verbose file operations
 alias mkdir='mkdir -p'
 # Make parent directories automatically
 
