@@ -10,6 +10,9 @@ source /etc/profile
 PATH="$HOME/bin:$PATH"
 export BASH="$HOME/.bash"
 
+# Avoid both duplicates and whitespace commands
+export HISTCONTROL=ignoreboth
+
 # Default Prompt
 #PS1='[\u@\h \W]\$ '
 # Source Colors, then default themes
