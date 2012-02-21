@@ -28,7 +28,9 @@ alias gexport='git archive --format zip --output'
 alias gdel='git branch -D'
 alias gmu='git fetch origin -v; git fetch upstream -v; git merge upstream/master'
 alias gll='git log --graph --pretty=oneline --abbrev-commit'
-alias gupsub='git submodule foreach git pull origin master'
+alias gsub='git submodule'
+alias gsuba='git submodule add'
+alias gsubup='git submodule foreach git pull origin master'
 
 case $OSTYPE in
   linux*)
@@ -49,7 +51,7 @@ function git-help() {
   echo
   echo "  gcl	  = git clone"
   echo "  g       = git"
-  echo "  get 	  = git"
+  echo "  get	  = git"
   echo "  ga      = git add"
   echo "  gall	  = git add ."
   echo "  gst/gs  = git status"
@@ -61,7 +63,7 @@ function git-help() {
   echo "  gdv     = git diff -w \"$@\" | vim -R -"
   echo "  gc      = git commit -v"
   echo "  gca     = git commit -v -a"
-  echo "  gci 	  = git commit --interactive"
+  echo "  gci	  = git commit --interactive"
   echo "  gb      = git branch"
   echo "  gba     = git branch -a"
   echo "  gcount  = git shortlog -sn"
@@ -73,4 +75,7 @@ function git-help() {
   echo "  gmu     = git fetch origin -v; git fetch upstream -v; git merge upstream/master"
   echo "  gll     = git log --graph --pretty=oneline --abbrev-commit"
   echo
+  echo "  gsub    = git submodule"
+  echo "  gsuba   = git submodule add"
+  echo "  gsubup  = git submodule foreach git pull origin master"
 }
