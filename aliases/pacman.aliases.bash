@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 
-alias pacman='pacman-color'
 # Full upgrade to all packages.
-alias pacupg='sudo pacman -Syu && pacaur -u'
+alias pacupg='sudo pacman -Syu'
 # Commands to install packages.
-alias pacin='pacaur -S'
+alias pacin='sudo pacman -S'
 alias pacins='sudo pacman -U'
 # Commands to remove packages.
 alias pacre='sudo pacman -R'
 alias pacrem='sudo pacman -Runs'
 # Commadns to search repositories.
-alias pacrep='pacaur -Si'
-alias pacreps='pacaur -Ss'
+alias pacrep='pacman -Si'
+alias pacreps='pacman -Ss'
 # Commands to search locally.
 alias pacloc='pacman -Qi'
 alias paclocs='pacman -Qs'

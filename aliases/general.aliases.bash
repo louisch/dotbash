@@ -16,7 +16,7 @@ alias mkdir='mkdir -pv' # Make parent directories automatically
 
 # List directory contents
 alias sl='ls'
-alias ls='ls++'
+alias ls='ls -lh --color=auto'
 # Enhanced ls
 alias la='ls -AF'
 # Show everything (apart from . and ..),
@@ -30,8 +30,8 @@ alias q='exit'
 # Tree
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
-alias ping='ping -c 5'
-# Ping five times instead of endlessly.
+alias ping='ping -c 3'
+# Ping three times instead of endlessly.
 
 # For security
 alias chown='chown --preserve-root'

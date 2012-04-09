@@ -27,12 +27,9 @@ do
 done
 
 # Load iBus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-
-# Keychain
-eval `keychain --eval --agents ssh id_rsa`
+#export GTK_IM_MODULE=ibus
+#export XMODIFIERS=@im=ibus
+#export QT_IM_MODULE=ibus
 
 # Added by autojump install.sh
 source /etc/profile.d/autojump.bash

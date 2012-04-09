@@ -5,7 +5,9 @@ Install by using `git clone`:
 
 You will need to create symlinks to the bash configuration files:
 
-    cp ~/.bashrc ~/.bashrc_original
+    mv ~/.bashrc ~/.bashrc_original
 	ln -s <path/to/cloned/repo>/bashrc ~/.bashrc
-	cp ~/.profile ~/.profile_original
+	mv ~/.profile ~/.profile_original
 	ln -s <path/to/cloned/repo>/profile ~/.profile
+    mv ~/.bash_profile ~/.bash_profile_original
+    ln -s <path/to/cloned/repo>/bash_profile ~/.bash_profile
