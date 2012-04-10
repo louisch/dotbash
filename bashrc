@@ -15,9 +15,6 @@ export HISTCONTROL=ignoreboth
 
 # Default Prompt
 #PS1='[\u@\h \W]\$ '
-# Source Colors, then default themes
-source "${BASH}/themes/colors.theme.bash"
-source "${BASH}/themes/default.theme.bash"
 
 # Load aliases
 FUNCTIONS="${BASH}/aliases/*.bash"
@@ -26,10 +23,10 @@ do
   source $config_file
 done
 
-# 'less' colour highlighting
-export LESS="-R"
-# 'ls' enhanced colour highlighting
-eval $(dircolors -b)
+# Theming
+# Source Colors, then default themes
+source "${BASH}/themes/colors.theme.bash"
+source "${BASH}/themes/default.theme.bash"
 
 # Load iBus
 #export GTK_IM_MODULE=ibus
