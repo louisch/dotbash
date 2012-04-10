@@ -26,6 +26,11 @@ do
   source $config_file
 done
 
+# 'less' colour highlighting
+export LESS="-R"
+# 'ls' enhanced colour highlighting
+eval $(dircolors -b)
+
 # Load iBus
 #export GTK_IM_MODULE=ibus
 #export XMODIFIERS=@im=ibus

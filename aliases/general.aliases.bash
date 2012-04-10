@@ -6,6 +6,7 @@ alias du='du -c -h' # Display disk space usage in current dir
 alias hist='history | grep $1' # History of commands (searches for argument)
 alias histfull='history' # Full history of commands
 alias pf='ps -Af | grep $1' # Search process for argument.
+alias grep='grep --color=auto'
 
 # File operation 
 # Verbose file operationss
