@@ -8,11 +8,11 @@ alias histfull='history' # Full history of commands
 alias pf='ps -Af | grep $1' # Search process for argument.
 alias grep='grep --color=auto'
 
-# File operation 
-# Verbose file operationss
+# File operation
+# More verbose
 alias cp='cp -v'
 alias mv='mv -v'
-alias rm='rm -v'
+alias rm='rm -vI' # Less dangerous rm
 alias mkdir='mkdir -pv' # Make parent directories automatically
 
 # List directory contents
