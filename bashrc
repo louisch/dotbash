@@ -12,6 +12,8 @@ export BASH="$HOME/.bash"
 
 # Avoid both duplicates and whitespace commands
 export HISTCONTROL=ignoreboth
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
 
 # Default Prompt
 #PS1='[\u@\h \W]\$ '
