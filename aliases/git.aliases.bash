@@ -18,6 +18,7 @@ alias gpo='git push origin'
 alias gdv='git diff -w "$@" | vim -R -'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
+alias gcam='git commit -v -a -m'
 alias gci='git commit --interactive'
 alias gb='git branch'
 alias gba='git branch -a'
@@ -43,7 +44,6 @@ case $OSTYPE in
     alias gd='git diff'
     ;;
 esac
-
 
 
 function git-help() {
