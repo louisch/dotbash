@@ -7,7 +7,7 @@
 
 source /etc/profile
 # Paths
-PATH="$HOME/bin:$PATH"
+PATH="$HOME/bin:$HOME/.gem/ruby/1.9.1/bin:$PATH"
 export BASH="$HOME/.bash"
 
 # Avoid both duplicates and whitespace commands

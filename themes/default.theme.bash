@@ -1,6 +1,11 @@
 #!/bin/bash
 
-PS1="${white}[${yellow}\t${white}][${bold_yellow}\u:${blue}\W${white}]\$ ${normal}"
+if [[ $USER = 'root' ]]; then
+    user_colour=${bold_red}
+else
+    user_colour=${bold_yellow}
+fi
+PS1="${white}[${yellow}\t${white}][${user_colour}\u:${blue}\W${white}]\$ ${normal}"
 #
 # 'less' colour highlighting
 export LESS="-R"
