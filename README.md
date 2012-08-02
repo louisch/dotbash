@@ -11,3 +11,5 @@ You will need to create symlinks to the bash configuration files:
 	ln -s <path/to/cloned/repo>/profile ~/.profile
     mv ~/.bash_profile ~/.bash_profile_original
     ln -s <path/to/cloned/repo>/bash_profile ~/.bash_profile
+    mv ~/.inputrc ~/.inputrc_original
+    ln -s ~/.bash/inputrc ~/.inputrc
