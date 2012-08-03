@@ -10,7 +10,9 @@ PS1="${white}[${yellow}\t${white}][${user_colour}\u:${blue}\W${white}]\$ ${norma
 # 'less' colour highlighting
 export LESS="-R"
 # 'ls' enhanced colour highlighting
-eval $(dircolors -b)
+if [[ `uname` = *Linux* ]]; then
+    eval $(dircolors -b)
+fi
 # 'man' colour highlighting
 man() {
 	env \
