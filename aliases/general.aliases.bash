@@ -16,8 +16,12 @@ alias rm='rm -vI' # Less dangerous rm
 alias mkdir='mkdir -pv' # Make parent directories automatically
 
 # List directory contents
+if [[ `uname` = Darwin ]]; then
+    alias ls='ls -lh -G'
+else
+    alias ls='ls -lh --color=auto'
+fi
 alias sl='ls'
-alias ls='ls -lh --color=auto'
 # Enhanced ls
 alias la='ls -AF'
 # Show everything (apart from . and ..),
