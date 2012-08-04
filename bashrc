@@ -36,4 +36,6 @@ source "${BASH}/themes/default.theme.bash"
 #export QT_IM_MODULE=ibus
 
 # Added by autojump install.sh
-source /etc/profile.d/autojump.bash
+if [[ `uname` = *Linux* ]]; then
+    source /etc/profile.d/autojump.bash
+fi
