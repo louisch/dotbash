@@ -4,6 +4,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+[[ $TERM != screen* ]] && exec tmux
 
 source /etc/profile
 # Paths
