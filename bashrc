@@ -10,6 +10,8 @@ source /etc/profile
 # Paths
 PATH="$HOME/bin:$HOME/.gem/ruby/1.9.1/bin:$PATH"
 export BASH="$HOME/.bash"
+export PYTHONDOCS=/usr/share/doc/python/html/
+export PYTHON2DOCS=/usr/share/doc/python2/html/
 
 # Avoid both duplicates and whitespace commands
 export HISTCONTROL=ignoreboth
